@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Assignment | Home</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            font-family: 'Segoe UI', sans-serif;
+            color: #fff;
+        }
+
+        .main {
+            width: 420px;
+            padding: 30px 25px;
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(14px);
+            border-radius: 26px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            align-items: center;
+            box-shadow: 0 25px 55px rgba(0,0,0,0.45);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 30px;
+            background: linear-gradient(135deg, #ff512f, #f09819);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* SAME STYLE FOR BUTTON & LINK */
+        .btn {
+            width: 100%;
+            height: 48px;                /* 🔒 fixed height */
+            border-radius: 30px;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            color: #2b2b2b;
+            background: linear-gradient(135deg, #00f2fe, #4facfe);
+            transition: 0.3s ease;
+
+            display: flex;               /* 🔥 size fix */
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+        }
+
+        footer {
+            margin-top: 10px;
+            font-size: 13px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="main">
+    <center><h1>Welcome to JavaScript Assignment: 01</h1></center>
+    <p>
+        This is the main page that contains my JavaScript assignment: 01 based on 5
+        different chapters. Click below to explore each assignment and
+        enhance your programming skills 🚀
+    </p>
+    <!-- Alerts only -->
+    <button class="btn" onclick="chapterOne()">Chapter 1 </button>
+    <button class="btn" onclick="chapterTwo()">Chapter 2 </button>
+
+    <!-- Links -->
+    <a href="third.html" class="btn">Chapter 3 </a>
+    <a href="fourth.html" class="btn">Chapter 4 </a>
+    <a href="fifth.html" class="btn">Chapter 5 </a>
+
+    <footer>Keep learning • Keep coding • Never stop 🚀</footer>
+</div>
+
+<script>
+     alert("Welcome! 😊\nExplore JavaScript Assignments & Keep Learning 🚀");
+/* ===== CHAPTER 1 ===== */
+function chapterOne() {
+    alert("Welcome, User!");
+    alert("⚠ ERROR 404: Unable to load this alert!");
+    alert("Welcome to my first JavaScript assignment.\nJust explore and interact.");
+    alert("Hello! Welcome again to my JS assignment website!");
+    alert("Feel free to explore my first JavaScript project 😂");
+    alert("Alerts have also been executed in the developer console.");
+}
+
+/* ===== CHAPTER 2 ===== */
+function chapterTwo() {
+    var username;
+    var myName = "Abdul-Rehman";
+    var message = "Assalam-u-Alaikum!";
+    alert(message);
+
+    // data steps
+    var name = "Abdul-Rehman";
+    var age = "15 years old";
+    var cer = "Certified Front-End Web Developer";
+    alert(name);
+    alert(age);
+    alert(cer);
+    alert("That was all about me!");
+
+    // pizza pattern
+    var pizza = "Pizza\nPizz\nPiz\nPi\nP\n^-^\n:)\n:)\n:)";
+    alert(pizza);
+
+    // email
+    var mail = "bestestfront-endwebdeveloper@gmail.com";
+    alert("My email address is: " + mail);
+
+    // book
+    var book = "The best way to learn JavaScript";
+    alert("I learned JavaScript from: " + book);
+
+    // style
+    var style = "▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬";
+    alert(style);
+}
+</script>
+
+</body>
+</html>
